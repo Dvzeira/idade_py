@@ -1,0 +1,13 @@
+def obter_ano_nascimento():
+    while True:
+        try:
+            ano_nascimento = int(input("Digite o ano de nascimento (1922 a 2021): "))
+            if 1922 <= ano_nascimento <= 2021:
+               idade = 2022 - ano_nascimento 
+               return idade
+            else:
+                print("Ano de nascimento fora do intervalo permitido. Tente novamente.")
+        except ValueError:
+            print("Por favor, digite um número válido.")
+
+print("Você Completou ou completará: ", obter_ano_nascimento())
